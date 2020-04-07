@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\compost.json" />
+    <None Remove="Data\landfill.json" />
+    <None Remove="Data\recycle.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\compost.json" />
+    <EmbeddedResource Include="Data\landfill.json" />
+    <EmbeddedResource Include="Data\recycle.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+    <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1367" />
+  </ItemGroup>
+
+</Project>
